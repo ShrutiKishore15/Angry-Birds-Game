@@ -56,7 +56,6 @@ function draw(){
         text("Score  " + score, width-300, 50)
     
     Engine.update(engine);
-    //strokeWeight(4);
     box1.display();
     box2.display();
     ground.display();
@@ -76,15 +75,12 @@ function draw(){
 
     bird.display();
     platform.display();
-    //log6.display();
     slingshot.display();
     console.log(bird.body.speed);    
 }
 
 function mouseDragged(){
-    //if (gameState!=="launched"){
-        Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
-    //}
+    Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
 }
 
 
